@@ -47,10 +47,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\Error handling.feature.cs">
+    <Compile Include="Features\Expected match errors.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Error handling.feature</DependentUpon>
+      <DependentUpon>Expected match errors.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Expected mismatch errors.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Expected mismatch errors.feature</DependentUpon>
     </Compile>
     <Compile Include="Implementation\Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,9 +67,13 @@
     <Compile Include="Steps\StepDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Error handling.feature">
+    <None Include="Features\Expected match errors.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Error handling.feature.cs</LastGenOutput>
+      <LastGenOutput>Expected match errors.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Expected mismatch errors.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Expected mismatch errors.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\Table comparison.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

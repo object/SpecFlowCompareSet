@@ -58,7 +58,7 @@ namespace SpecFlowCompareSet.Steps
         [Then(@"it should not contain any of items")]
         public void ThenItShouldNotContainAnyOfItems(Table table)
         {
-            Compare(table, TableComparison.NoneOfTheItemsInTheTableAreInTheSet);
+            Compare(table, TableComparison.TheTableAndSetHaveCommonItems, false);
         }
 
         private void Compare(Table table, TableComparison comparisonMode = TableComparison.TheTableAndSetMatchWithoutRegardForOrder, bool expectedMatch = true)
