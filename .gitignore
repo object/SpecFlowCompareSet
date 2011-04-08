@@ -1,0 +1,17 @@
+obj
+bin
+deploy
+deploy/*
+test-results/
+_ReSharper.*
+*.csproj.user
+*.resharper.user
+*.resharper
+*.suo
+*.cache
+*.userprefs
+*.pidb
+TestResult.xml
+openlocal.sh
+openlocal.bat
+~$*
